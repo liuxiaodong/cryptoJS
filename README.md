@@ -7,4 +7,5 @@ cryptoJS
   var result = cipher.update("aabbccddeeff112233");
   var final = cipher.final();
   result = buffer.Buffer.concat([result, final]);
+  result:   78b56ab6fedd8f63d2a2e4a43038e314a9fc292b8c598e12ef478413d1ead5f6
 </code></pre>
