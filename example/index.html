@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport", content="width=device-width, initial-scale=1" />
+  <title> cryptoJS example</title>
+  <script src="../buffer.js"></script>
+  <script src="../cryptoJS.min.js"></script>
+</head>
+<body>
+  <div>
+    <pre>
+      var cipher = cryptoJS.createCipheriv("aes-128-ecb", new buffer.Buffer("11223344556677889900aabbccddeeff","hex"), "");
+      var result = cipher.update("aabbccddeeff112233");
+      var final = cipher.final();
+      result = buffer.Buffer.concat([result, final]);
+    </pre>
+    <pre>
+      <span>result:   </span>
+      <span id="result"></span>
+    </pre>
+  </div>
+  <script>
+      var cipher = cryptoJS.createCipheriv("aes-128-ecb", new buffer.Buffer("11223344556677889900aabbccddeeff","hex"), "");
+      var result = cipher.update("aabbccddeeff112233");
+      var final = cipher.final();
+      result = buffer.Buffer.concat([result, final]);
+      document.getElementById("result").innerText = result.toString("hex");
+  </script>
+</body>
+</html>

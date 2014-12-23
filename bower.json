@@ -1,0 +1,21 @@
+{
+  "name": "cryptoJS",
+  "version": "0.0.1",
+  "homepage": "https://github.com/liuxiaodong/cryptoJS",
+  "authors": [
+    "liuxiaodong <liuxiaodong1989@gmail.com>"
+  ],
+  "description": "encrypt",
+  "keywords": [
+    "encrypt",
+    "aes"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
